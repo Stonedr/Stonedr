@@ -59,7 +59,7 @@ body {
   height: 100vh;
   display: flex;
   background: rgb(255, 255, 255);
-  background-image: url(img/hero-headerr.png);
+  background-image: url("img/hero-headerr.png");
   background-position: center;
   background-size: cover;
   flex-direction: column;
