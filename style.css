@@ -55,7 +55,7 @@ html{
      
      
       .hero {
-      position: relative;
+     
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -170,4 +170,7 @@ html{
       max-width: 300px;
       min-width: 10vw;
       border: black 1px solid;
+  }
+  .article p{
+    text-align: center;
   }
