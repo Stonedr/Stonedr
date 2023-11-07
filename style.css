@@ -1,32 +1,17 @@
- 
-html{
-  scroll-behavior:smooth
+ html {
+    scroll-behavior: smooth;
 }
+
 body {
     margin: 0;
     padding: 0;
-   
     font-family: 'Bebas Neue', sans-serif;
-
     font-family: 'Caprasimo', serif;
-
-
 }
 
 
-.article p{
-  text-align: center;
-  max-width: fit-content;
-  padding: 16px;
-  margin-bottom: 32px;
-}
-
-
-.titre-de-la-partie{
-    text-align: center;
-}
 .navbar {
-    background-color: #333; 
+    background-color: #333;
     padding: 10px 0;
 }
 
@@ -36,85 +21,85 @@ body {
     padding: 0;
     display: flex;
     justify-content: center;
-   
-
 }
 
 .navbar li {
     margin: 0 20px;
     font-weight: bold;
-    font-size: 1.2em;}
+    font-size: 1.2em;
+}
 
 .navbar a {
-	color: #E49DF5;
-	text-decoration:none;}
+    color: #E49DF5;
+    text-decoration: none;
+}
 
-    .navbar a:hover 
-    {
-    color: #CBF09C; 
-	}
+.navbar a:hover {
+    color: #CBF09C;
+}
 
-	.hero {
+.hero {
     position: relative;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  background: rgb(255, 255, 255);
-  background-image: url("img/heroheader.png");
-  background-position: center;
-  background-size: cover;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-  color: black;
-                        }
-
-
-  .hero h1{
-  font-size: 5vw;
-  margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background: rgb(255, 255, 255);
+    background-image: url("img/heroheader.png");
+    background-position: center;
+    background-size: cover;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
 }
 
-.hero h2{
-  font-size: 2vw;
-  font-weight: 400;
-  margin: 0;
+.hero h1 {
+    font-size: 5vw;
+    margin: 0;
 }
 
-.card{
+.hero h2 {
+    font-size: 2vw;
+    font-weight: 400;
+    margin: 0;
+}
 
+
+.card {
     color: white;
     max-width: 300px;
     min-width: 10vw;
     height: 20vw;
     min-height: 10vw;
     max-height: 20vw;
-    transition: all .6s ease;
+    transition: all 0.6s ease;
     justify-content: center;
     align-content: center;
     align-items: center;
     text-transform: uppercase;
-   
     -webkit-box-shadow: -4px 4px 28px 0px rgba(66, 68, 90, 1);
     -moz-box-shadow: -4px 4px 28px 0px rgba(66, 68, 90, 1);
     box-shadow: -4px 4px 28px 0px rgba(66, 68, 90, 1);
-  }
-  
-  .card i{
+}
+
+.card i {
     font-size: 6vw;
-    line-height: 6vw; 
-  }
-  
-  .container{
+    line-height: 6vw;
+}
+
+
+.container {
     justify-content: center;
-  }
- 
-  img{
-    max-width: 300px;
-  }
-  ul{
-   display: flex;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+
+ul {
+    display: flex;
     flex-wrap: wrap;
     text-decoration: none;
     list-style: none;
@@ -122,27 +107,25 @@ body {
     justify-content: center;
     margin-top: 80px;
     margin-bottom: 160px;
-    
-  }
-  li :hover :not(p){
-    scale: +1.3;
-         }
+}
+
+ul li:hover:not(p) {
+    transform: scale(1.3);
+}
 
 
-  .liens_de_contact a{
+.liens_de_contact a {
     text-align: center;
     color: black;
     text-decoration: none;
-  }
-  
+}
 
-
-  footer{
-    background-color: #333; 
+footer {
+    background-color: #333;
     padding: 10px 0;
+}
 
-  }
-  footer p{
+footer p {
     margin: 0 20px;
     font-weight: bold;
     font-size: 1.2em;
@@ -151,22 +134,42 @@ body {
     color: white;
 }
 
-li p{
-  text-align: center;
-  color: black;
+.container h3 {
+    text-align: center;
 }
-li a{
-  text-decoration: none;
-}
-.container h3{
-  text-align: center;
-}
- 
+
+
 #deuxiemes_cartes img {
-  height: 20vw;
-    min-height: 10vw;
-    max-height: 17vw;
-    max-width: 300px;
-    min-width: 10vw;
-    border: black 1px solid;
+    height: auto;
+    max-width: 100%;
+    border: 1px solid black;
+}
+
+
+@media screen and (max-width: 768px) {
+    .navbar li {
+        margin: 0 10px;
+    }
+
+    .hero h1 {
+        font-size: 8vw;
+    }
+
+    .hero h2 {
+        font-size: 3vw;
+    }
+
+    .card {
+        max-width: 90%;
+        height: auto;
+    }
+
+    .card i {
+        font-size: 10vw;
+        line-height: 10vw;
+    }
+
+    ul {
+        gap: 16px;
+    }
 }
